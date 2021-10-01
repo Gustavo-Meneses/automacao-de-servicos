@@ -1,11 +1,13 @@
- automacao-de-servicos
-automação iniciante!
+#automacao de serviços.
+#automação iniciante!
+
+
+#PARTE 1:
+#Passo 1
 
 import pyautogui
 import pyperclip
 import time
-
- PARTE 1:
 
 pyautogui.PAUSE = 1
 
@@ -15,14 +17,20 @@ pyperclip.copy(link)
 pyautogui.hotkey("ctrl", "v")
 pyautogui.press("enter")
 
+#Passo 2
+
 time.sleep(5) - espera 5 segundos
 pyautogui.click(x=, y=, clicks=2)
+
+#Passo 3
 
 time.sleep(2)
 pyautogui.click(x=, y=)
 pyautogui.click(x=, y=)
 pyautogui.click(x=, y=)
-time.sleep(3) - esperar ele fazer o download
+time.sleep(3) #esperar ele fazer o download
+
+#Passo 4
 
 import pandas as pd
 
@@ -31,29 +39,37 @@ faturamento = tabela["Valor Final"].sum()
 quantidade = tabela["Quantidade"].sum()
 display(tabela)
 
+#PARTE 2:
 
-pyautogui.hotkey("ctrl", "t") - abre uma nova aba
+#Passo 1
+
+pyautogui.hotkey("ctrl", "t") #abre uma nova aba
 link = "https://mail.google.com/"
 pyperclip.copy(link)
 pyautogui.hotkey("ctrl", "v")
 pyautogui.press("enter")
 
-- clicar no botão escrever
+#Passo 2
+
 time.sleep(5)
 pyautogui.click(x=, y=)
 
- escrever pra quem eu to mandando o email
-pyautogui.write("@gmail.com")
-pyautogui.press("tab") - escolher o email
-pyautogui.press("tab") - passar pro campo de assunto
+#Passo 3
 
-- escrever o assunto
+pyautogui.write("@gmail.com")
+pyautogui.press("tab")
+pyautogui.press("tab")
+
+#Passo 4
+
 assunto = "Relatório de Vendas"
 pyperclip.copy(assunto)
 pyautogui.hotkey("ctrl", "v")
-pyautogui.press("tab") - passar pro corpo do email
+pyautogui.press("tab")
 
-- escrever o corpo do email
+#Passo 5
+
+#escrever o corpo do email
 texto = f"""
 Prezados, bom dia
 
@@ -64,12 +80,13 @@ Abs
 Gustavo Meneses"""
 pyautogui.write(texto)
 
-- enviar o email
+#Passo 6
+
 pyautogui.hotkey("ctrl", "enter")
 
 ====================================================================================================================================================================
 
-- Para localizar as coordenadas de cada item a ser selecionado, usar o código:
+#Para localizar as coordenadas de cada item a ser selecionado, usar o código:
 
 import time
 time.sleep(5)
